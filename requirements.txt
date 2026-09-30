@@ -11,8 +11,7 @@ pillow
 opencv-python
 matplotlib
 
-# PDF processing
-PyMuPDF
+# PDF processing is optional: pip install '.[pdf]'
 
 # Interactive computing
 IPython

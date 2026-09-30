@@ -11,7 +11,6 @@ import cv2
 import argparse
 import numpy as np
 from multiprocessing import Pool
-import pymupdf  # PyMuPDF
 from typing import List, Tuple, Union
 from PIL import Image
 from functools import lru_cache
@@ -56,6 +55,8 @@ def segment_chemical_structures_from_file(
         List[np.array]: expanded segments (shape: (h, w, num_masks))
     """
     if file_path[-3:].lower() == "pdf":
+        import pymupdf  # Optional dependency: install decimer-segmentation[pdf]
+
         # Convert PDF to images using PyMuPDF with optimized settings
         pdf_document = pymupdf.open(file_path)
         images = []

@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decimer_segmentation",
-    version="1.5.0",
+    version="1.5.0+arrepath.1",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
     maintainer="Kohulan Rajan",
@@ -34,11 +34,11 @@ setuptools.setup(
         "opencv-python",
         "matplotlib",
         "IPython",
-        "PyMuPDF",
         "numba",
         "scipy",
         "requests",
     ],
+    extras_require={"pdf": ["PyMuPDF"]},
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
         "Programming Language :: Python :: 3",
