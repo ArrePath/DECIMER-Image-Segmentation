@@ -1,4 +1,12 @@
 # DECIMER-Image-Segmentation
+
+## ArrePath fork
+
+Based on upstream v1.5.0. Raster segmentation and model weights are unchanged.
+PyMuPDF is no longer installed or imported for raster-image processing. PDF input
+requires the optional `pdf` extra (`pip install '.[pdf]'` from this checkout),
+which installs AGPL-or-commercial PyMuPDF. Default installations omit it.
+
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](https://opensource.org/licenses/MIt)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/graphs/commit-activity)
 [![GitHub issues](https://img.shields.io/github/issues/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/issues/)
